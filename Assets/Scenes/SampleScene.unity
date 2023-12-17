@@ -148,6 +148,8 @@ MonoBehaviour:
   isOn: 0
   light: {fileID: 425732023}
   source: {fileID: 425732024}
+  battery: 0
+  dischargeRate: 0
 --- !u!1 &425732021
 GameObject:
   m_ObjectHideFlags: 0

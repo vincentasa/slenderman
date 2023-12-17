@@ -7,23 +7,23 @@ public class Flashlight : MonoBehaviour
     public bool isOn;
     public Light light;
     public AudioSource source;
-    public float battery; // a variable to store the battery level
-    public float dischargeRate; // a variable to set how fast the battery drains
+    public float battery; 
+    public float dischargeRate; 
 
     void Start()
     {
-        battery = 100f; // initialize the battery level to 100%
-        dischargeRate = 0.5f; // set the discharge rate to 0.5% per second
+        battery = 100f; 
+        dischargeRate = 1f; 
     }
 
     void Update()
     {
-        light.enabled = isOn; // enable or disable the light based on the isOn variable
+        light.enabled = isOn; 
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            isOn = !isOn; // toggle the isOn variable
-            source.Play(); // play the sound effect
+            isOn = !isOn; 
+            source.Play(); 
         }
 
         if (isOn && battery > 0) // if the flashlight is on and the battery is not empty
