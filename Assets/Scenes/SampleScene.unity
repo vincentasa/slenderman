@@ -162,6 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce324b9c8527eba4b82fa037b9556ee7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pages: 0
+  enemy: {fileID: 824081008}
 --- !u!1 &425732021
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,9 +768,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  target: {fileID: 355014337}
-  viewDistance: 5
-  wanderDistance: 3
+  target: {fileID: 0}
+  viewDistance: 15
+  wanderDistance: 20
   animator: {fileID: 1252848578}
 --- !u!54 &824081009
 Rigidbody:
